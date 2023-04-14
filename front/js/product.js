@@ -53,7 +53,6 @@ function addCart(productId) {
     alert("Une couleur doit être séléctionnée");
     return;
   }
-
   let foundProduct = cart.find((p) => p._id === productId && p.color === color);
   if (foundProduct != undefined) {
     foundProduct.quantity += parseInt(quantity);

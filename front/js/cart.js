@@ -192,6 +192,8 @@ function checkInputRegex(inputId, regex, errorElementId, errorMessage) {
 }
 
 
+
+
 checkInputRegex(
   "firstName",
   nameRegex,
@@ -228,11 +230,14 @@ const formulaireEnvoie = document.querySelector(".cart__order__form");
 formulaireEnvoie.addEventListener("submit", function (e) {
   envoyerFormulaire(e);
 });
-
+let totalCart = cart.length;
 
 function envoyerFormulaire(e) {
   e.preventDefault();
 
+  if (
+    totalCart != 0
+  )
   if (
     checkRegex(
       "firstName",
