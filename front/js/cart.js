@@ -231,7 +231,6 @@ formulaireEnvoie.addEventListener("submit", function (e) {
   envoyerFormulaire(e);
 });
 let totalCart = cart.length;
-console.log(totalCart)
 
 function envoyerFormulaire(e) {
   e.preventDefault();
